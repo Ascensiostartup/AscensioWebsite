@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ascensio - Projects</title><script src="https://cdn.tailwindcss.com"></script></head>
-<body class="bg-white text-gray-900 font-sans"><header class="bg-blue-900 text-white p-4 shadow-md sticky top-0 z-50">
-<div class="container mx-auto flex justify-between items-center"><div class="flex items-center space-x-2">
-<img src="logo.jpg" alt="Ascensio Logo" class="w-10 h-10 rounded-full"><span class="text-2xl font-bold">Ascensio</span></div>
-<nav class="space-x-6 text-sm">
-<a href="index.html" class="hover:text-blue-300">Home</a><a href="founders.html" class="hover:text-blue-300">Founders</a>
-<a href="internships.html" class="hover:text-blue-300">Internships</a><a href="projects.html" class="hover:text-blue-300">Projects</a>
-<a href="contact.html" class="hover:text-blue-300">Contact</a></nav></div></header>
-<section class="py-16 px-4 bg-blue-50 max-w-5xl mx-auto">
-<h2 class="text-3xl font-semibold mb-6 text-center">Project Domains We Support</h2>
-<ul class="list-disc list-inside space-y-2 text-center">
-<li>Mechanical: Thermal systems, eco-materials, CAD</li>
-<li>Computer Science: Smart Mirror, Web Apps, AI/ML</li>
-<li>ECE/EEE: IoT systems, Automation, Embedded devices</li>
-</ul>
-<p class="mt-4 text-gray-600 text-center">
-Sample projects: Smart Mirror, LogiTrack GPS, Voice Assistant, Composite Materials
-</p>
-</section><footer class="bg-blue-900 text-white p-4 text-center">
-<p class="text-sm">© 2025 Ascensio. All rights reserved.</p></footer></body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ascensio - Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<header class="bg-blue-900 text-white p-4 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center space-x-2">
+      <img src="logo.jpg" alt="Ascensio Logo" class="w-10 h-10 rounded-full">
+      <span class="text-2xl font-bold">Ascensio</span>
+    </div>
+    <nav class="space-x-6 text-sm hidden md:flex">
+      <a href="index.html" class="hover:text-blue-300">Home</a>
+      <a href="founders.html" class="hover:text-blue-300">Founders</a>
+      <a href="internships.html" class="hover:text-blue-300">Internships</a>
+      <a href="projects.html" class="hover:text-blue-300">Projects</a>
+      <a href="contact.html" class="hover:text-blue-300">Contact</a>
+    </nav>
+    <!-- Mobile Menu Toggle -->
+    <div class="md:hidden">
+      <button class="text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12h18M3 6h18M3 18h18"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden">
+    <nav class="space-y-4 px-4 py-2">
+      <a href="index.html" class="block text-gray-700 hover:text-blue-300">Home</a>
+      <a href="founders.html" class="block text-gray-700 hover:text-blue-300">Founders</a>
+      <a href="internships.html" class="block text-gray-700 hover:text-blue-300">Internships</a>
+      <a href="projects.html" class="block text-gray-700 hover:text-blue-300">Projects</a>
+      <a href="contact.html" class="block text-gray-700 hover:text-blue-300">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="py-16 px-4 bg-blue-50 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Project Domains We Support</h2>
+  <ul class="list-disc list-inside space-y-2 text-center text-lg md:text-xl">
+    <li>Mechanical: Thermal systems, eco-materials, CAD</li>
+    <li>Computer Science: Smart Mirror, Web Apps, AI/ML</li>
+    <li>ECE/EEE: IoT systems, Automation, Embedded devices</li>
+  </ul>
+  <p class="mt-4 text-gray-600 text-center text-sm md:text-base">
+    Sample projects: Smart Mirror, LogiTrack GPS, Voice Assistant, Composite Materials
+  </p>
+</section>
+
+<footer class="bg-blue-900 text-white p-4 text-center">
+  <p class="text-sm">© 2025 Ascensio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
