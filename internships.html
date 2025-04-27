@@ -5,9 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ascensio - Internships</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .internships-section {
+      background-image: url('BG2.jpeg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
+<!-- Header -->
 <header class="bg-blue-900 text-white p-4 shadow-md sticky top-0 z-50">
   <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
     <div class="flex items-center space-x-2">
@@ -32,31 +41,70 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden">
+  <div id="mobile-menu" class="md:hidden hidden bg-blue-800">
     <nav class="space-y-4 px-4 py-2">
-      <a href="index.html" class="block text-gray-700 hover:text-blue-300">Home</a>
-      <a href="founders.html" class="block text-gray-700 hover:text-blue-300">Founders</a>
-      <a href="internships.html" class="block text-gray-700 hover:text-blue-300">Internships</a>
-      <a href="projects.html" class="block text-gray-700 hover:text-blue-300">Projects</a>
-      <a href="contact.html" class="block text-gray-700 hover:text-blue-300">Contact</a>
+      <a href="index.html" class="block text-white hover:text-blue-300">Home</a>
+      <a href="founders.html" class="block text-white hover:text-blue-300">Founders</a>
+      <a href="internships.html" class="block text-white hover:text-blue-300">Internships</a>
+      <a href="projects.html" class="block text-white hover:text-blue-300">Projects</a>
+      <a href="contact.html" class="block text-white hover:text-blue-300">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="py-16 px-4 bg-white max-w-7xl mx-auto">
-  <h2 class="text-3xl font-semibold mb-6 text-center">Internships We Offer</h2>
-  <ul class="list-disc list-inside space-y-2 text-center text-lg md:text-xl">
-    <li>Artificial Intelligence & Machine Learning</li>
-    <li>Web Development</li>
-    <li>Embedded Systems & IoT</li>
-    <li>Mechanical CAD & Design</li>
-    <li>Data Analytics & Python Programming</li>
-  </ul>
-  <p class="mt-4 text-gray-600 text-center text-sm md:text-base">
-    Internships are offline and certificate-based, with hands-on project experience.
-  </p>
+<!-- Section: Internships -->
+<section class="internships-section py-16 px-4 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6 text-center text-blue-900">Internships We Offer</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Internship 1: AI & Machine Learning -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="ai.jpg" alt="AI Internship" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-blue-900">Artificial Intelligence & Machine Learning</h3>
+        <p class="text-gray-600 mt-2">Learn the latest advancements in AI and Machine Learning with hands-on experience.</p>
+      </div>
+    </div>
+    
+    <!-- Internship 2: Web Development -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="web.jpg" alt="Web Development Internship" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-blue-900">Web Development</h3>
+        <p class="text-gray-600 mt-2">Work on real-world web development projects and enhance your coding skills.</p>
+      </div>
+    </div>
+    
+    <!-- Internship 3: Embedded Systems & IoT -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="EMBI.jpg" alt="Embedded Systems Internship" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-blue-900">Embedded Systems & IoT</h3>
+        <p class="text-gray-600 mt-2">Build and design embedded systems with cutting-edge IoT technology.</p>
+      </div>
+    </div>
+    
+    <!-- Internship 4: Mechanical CAD & Design -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="MD.jpg" alt="Mechanical CAD Internship" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-blue-900">Mechanical CAD & Design</h3>
+        <p class="text-gray-600 mt-2">Work on mechanical design projects and gain proficiency in CAD tools like CATIA and NX.</p>
+      </div>
+    </div>
+    
+    <!-- Internship 5: Data Analytics & Python Programming -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="DAP.jpg" alt="Data Analytics Internship" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-blue-900">Data Analytics & Python Programming</h3>
+        <p class="text-gray-600 mt-2">Master data analytics concepts and Python programming with hands-on projects.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer class="bg-blue-900 text-white p-4 text-center">
   <p class="text-sm">© 2025 Ascensio. All rights reserved.</p>
 </footer>

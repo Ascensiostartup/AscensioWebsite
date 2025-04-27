@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ascensio - Projects</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for images in each section */
+    .section-image {
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -34,27 +44,37 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden hidden">
     <nav class="space-y-4 px-4 py-2">
-      <a href="index.html" class="block text-gray-700 hover:text-blue-300">Home</a>
-      <a href="founders.html" class="block text-gray-700 hover:text-blue-300">Founders</a>
-      <a href="internships.html" class="block text-gray-700 hover:text-blue-300">Internships</a>
-      <a href="projects.html" class="block text-gray-700 hover:text-blue-300">Projects</a>
-      <a href="contact.html" class="block text-gray-700 hover:text-blue-300">Contact</a>
+      <a href="index.html" class="block text-white hover:text-blue-300">Home</a>
+      <a href="founders.html" class="block text-white hover:text-blue-300">Founders</a>
+      <a href="internships.html" class="block text-white hover:text-blue-300">Internships</a>
+      <a href="projects.html" class="block text-white hover:text-blue-300">Projects</a>
+      <a href="contact.html" class="block text-white hover:text-blue-300">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="py-16 px-4 bg-blue-50 max-w-7xl mx-auto">
-  <h2 class="text-3xl font-semibold mb-6 text-center">Project Domains We Support</h2>
-  <ul class="list-disc list-inside space-y-2 text-center text-lg md:text-xl">
-    <li>Mechanical: Thermal systems, eco-materials, CAD</li>
-    <li>Computer Science: Smart Mirror, Web Apps, AI/ML</li>
-    <li>ECE/EEE: IoT systems, Automation, Embedded devices</li>
-  </ul>
-  <p class="mt-4 text-gray-600 text-center text-sm md:text-base">
-    Sample projects: Smart Mirror, LogiTrack GPS, Voice Assistant, Composite Materials
-  </p>
+<!-- Section 1: Mechanical -->
+<section class="projects-section py-16 px-4 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Mechanical: Thermal Systems, Eco-Materials, CAD</h2>
+  <img src="mech.jpeg" alt="Mechanical" class="section-image mb-4">
+  <p class="text-center text-lg">Explore projects related to mechanical systems, including thermal systems, eco-materials, and CAD designs.</p>
 </section>
 
+<!-- Section 2: Computer Science -->
+<section class="projects-section py-16 px-4 max-w-7xl mx-auto bg-blue-50">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Computer Science: Smart Mirror, Web Apps, AI/ML</h2>
+  <img src="cse.jpeg" alt="Computer Science" class="section-image mb-4">
+  <p class="text-center text-lg">Discover innovative projects in computer science like Smart Mirrors, AI/ML applications, and web development.</p>
+</section>
+
+<!-- Section 3: ECE/EEE -->
+<section class="projects-section py-16 px-4 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6 text-center">ECE/EEE: IoT Systems, Automation, Embedded Devices</h2>
+  <img src="ece.jpeg" alt="ECE/EEE" class="section-image mb-4">
+  <p class="text-center text-lg">Learn about embedded systems, IoT innovations, and automation projects for ECE/EEE domains.</p>
+</section>
+
+<!-- Footer -->
 <footer class="bg-blue-900 text-white p-4 text-center">
   <p class="text-sm">© 2025 Ascensio. All rights reserved.</p>
 </footer>

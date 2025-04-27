@@ -11,7 +11,7 @@
 <header class="bg-blue-900 text-white p-4 shadow-md sticky top-0 z-50">
   <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
     <div class="flex items-center space-x-2">
-      <img src="logo.jpg" alt="Ascensio Logo" class="w-10 h-10 rounded-full">
+      <img src="logo.jpg" alt="Ascensio Logo" class="w-10 h-10 rounded-full" loading="lazy">
       <span class="text-2xl font-bold">Ascensio</span>
     </div>
     <nav class="space-x-6 text-sm hidden md:flex">
@@ -21,7 +21,6 @@
       <a href="projects.html" class="hover:text-blue-300">Projects</a>
       <a href="contact.html" class="hover:text-blue-300">Contact</a>
     </nav>
-    <!-- Mobile Menu Toggle -->
     <div class="md:hidden">
       <button class="text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,39 +30,47 @@
     </div>
   </div>
 
-  <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden hidden">
-    <nav class="space-y-4 px-4 py-2">
-      <a href="index.html" class="block text-gray-700 hover:text-blue-300">Home</a>
-      <a href="founders.html" class="block text-gray-700 hover:text-blue-300">Founders</a>
-      <a href="internships.html" class="block text-gray-700 hover:text-blue-300">Internships</a>
-      <a href="projects.html" class="block text-gray-700 hover:text-blue-300">Projects</a>
-      <a href="contact.html" class="block text-gray-700 hover:text-blue-300">Contact</a>
+    <nav class="space-y-4 px-4 py-2 bg-white">
+      <a href="index.html" class="block text-blue-900 hover:text-blue-300">Home</a>
+      <a href="founders.html" class="block text-blue-900 hover:text-blue-300">Founders</a>
+      <a href="internships.html" class="block text-blue-900 hover:text-blue-300">Internships</a>
+      <a href="projects.html" class="block text-blue-900 hover:text-blue-300">Projects</a>
+      <a href="contact.html" class="block text-blue-900 hover:text-blue-300">Contact</a>
     </nav>
   </div>
 </header>
-
-<section class="bg-blue-50 py-16 px-4 text-center">
-  <h2 class="text-4xl font-bold mb-4">About Ascensio</h2>
-  <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-    Ascensio is a student-founded initiative created to empower engineering students by providing them with real-world internships and project support.
-  </p>
+<!-- About Us Section -->
+<section class="relative text-center h-[400px] md:h-[600px] flex items-center justify-center" style="background-image: url('about-us.jpeg'); background-size: cover; background-position: center center;">
+  <div class="bg-black bg-opacity-40 p-8 rounded-lg">
+    <h2 class="text-4xl font-bold mb-4 text-white drop-shadow-lg">About Ascensio</h2>
+    <p class="text-lg text-white max-w-3xl mx-auto drop-shadow-md">
+      Ascensio is a student-founded initiative created to empower engineering students by providing them with real-world internships and project support.
+    </p>
+  </div>
 </section>
 
-<section class="py-16 px-4 bg-white max-w-5xl mx-auto text-center">
-  <h2 class="text-3xl font-semibold mb-8">What We Do</h2>
-  <p class="text-gray-700 text-lg">
-    We offer hands-on internships, guide innovative projects, and connect students with practical industry-level opportunities.
-    Our programs cover fields like AI/ML, Web Development, IoT, CAD Design, Data Analytics, and more.
-  </p>
+<!-- What We Do Section -->
+<section class="relative text-center h-[400px] md:h-[600px] flex items-center justify-center" style="background-image: url('what-we-do.jpeg'); background-size: cover; background-position: center center;">
+  <div class="bg-black bg-opacity-40 p-8 rounded-lg">
+    <h2 class="text-4xl font-bold mb-4 text-white drop-shadow-lg">What We Do</h2>
+    <p class="text-lg text-white max-w-3xl mx-auto drop-shadow-md">
+      We offer hands-on internships, guide innovative projects, and connect students with practical industry-level opportunities.
+      Our programs cover fields like AI/ML, Web Development, IoT, CAD Design, Data Analytics, and more.
+    </p>
+  </div>
 </section>
 
-<section class="py-16 px-4 bg-blue-50 max-w-5xl mx-auto text-center">
-  <h2 class="text-3xl font-semibold mb-8">Our Mission and Motive</h2>
-  <p class="text-gray-700 text-lg">
-    Our mission is to bridge the gap between classroom knowledge and industrial expertise. We strive to nurture a generation of engineers who are industry-ready, confident, and innovative thinkers prepared to tackle real-world problems.
-  </p>
+<!-- Mission and Motive Section -->
+<section class="relative text-center h-[400px] md:h-[600px] flex items-center justify-center" style="background-image: url('mission-motive.jpeg'); background-size: cover; background-position: center center;">
+  <div class="bg-black bg-opacity-40 p-8 rounded-lg">
+    <h2 class="text-4xl font-bold mb-4 text-white drop-shadow-lg">Our Mission and Motive</h2>
+    <p class="text-lg text-white max-w-3xl mx-auto drop-shadow-md">
+      Our mission is to bridge the gap between classroom knowledge and industrial expertise. We strive to nurture a generation of engineers who are industry-ready, confident, and innovative thinkers prepared to tackle real-world problems.
+    </p>
+  </div>
 </section>
+
 
 <footer class="bg-blue-900 text-white p-4 text-center mt-8">
   <p class="text-sm">© 2025 Ascensio. All rights reserved.</p>
